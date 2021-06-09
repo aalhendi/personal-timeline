@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import styled, { ThemeConsumer, ThemeProvider } from "styled-components"
+import Home from "./components/Home.js"
 
 function App() {
+    const theme  = {
+        backgroundColor: "#000000",
+        mainColor: "#FFFFFF",
+        sideColor: "#FF0000"
+        };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
   );
 }
 
