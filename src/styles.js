@@ -11,3 +11,18 @@ export const GlobalStyle = createGlobalStyle`
 export const Title = styled.h1`
     text-align: center;
 `;
+
+export const eTitle = styled.h2`
+    text-aligh: left;
+    color: white
+`
+
+export const eDesc = styled.h4`
+    text-align: center;
+    color: yellow;
+`
+
+export const eDate = styled.h5`
+    text align: cener;
+    color: red;
+`
