@@ -1,6 +1,7 @@
 import styled, { ThemeConsumer, ThemeProvider } from "styled-components";
 import Home from "./components/Home.js";
 import Timeline from "./components/Timeline.js";
+import "./App.css";
 
 function App() {
     const theme = {

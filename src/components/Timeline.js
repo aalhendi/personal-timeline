@@ -32,28 +32,30 @@ const TimelineElement = (props) => {
 */
 
 const Timeline = () => {
+
     return (
         <VerticalTimeline>
             {Elements.map((e) => {
+                let showButton = e.buttonText !== null && e.buttonText !== undefined;
                 return (
                     <VerticalTimelineElement
                         key={e.id}
                         className="vertical-timeline-element--work"
                         contentStyle={{
-                            background: "rgb(33, 150, 243)",
-                            color: "#fff",
+                            background: "#353d40",
+                            color: "#f2b138",
                         }}
                         contentArrowStyle={{
-                            borderRight: "7px solid  rgb(33, 150, 243)",
+                            borderRight: "7px solid  #353d40",
                         }}
                         date={e.dateRange}
                         iconStyle={{
-                            background: "rgb(33, 150, 243)",
+                            background: "#353d40",
                             color: "#fff",
                         }}
                     >
-                        <eTitle>{e.title}{"\n"}</eTitle>
-                        <eDesc>{e.description}</eDesc>
+                        <h1 className="vertical-tiemline-element-title">{e.title}</h1>
+                        <h4 className="vertical-timeline-element-subtitle">{e.description}</h4>
                     </VerticalTimelineElement>
                 );
             })}

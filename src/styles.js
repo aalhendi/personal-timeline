@@ -10,6 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Title = styled.h1`
     text-align: center;
+    color: #FFFFFF;
+    font-size: 48px;
 `;
 
 export const eTitle = styled.h2`

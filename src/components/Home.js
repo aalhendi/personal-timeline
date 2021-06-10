@@ -2,7 +2,7 @@ import {Title} from "../styles.js"
 
 const Home = () => {
     return (
-        <Title>Hello World</Title>
+        <Title>Abdulrazzaq Alhendi</Title>
     );
 };
 
